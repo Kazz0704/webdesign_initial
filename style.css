@@ -1,0 +1,349 @@
+* {
+    box-sizing: border-box;
+}
+
+p {
+    font-size: 18px;
+    line-height: 2;
+}
+
+.fix{
+   flex-wrap: nowrap;
+}
+
+.nextpage{
+    width: 100px;
+    height: 13px;
+    border: none;
+    position: fixed;
+    bottom: 50px;
+    right: 1px;
+    z-index: 1000;
+    border-radius: 50%;
+    align-items: center;
+}
+
+.num2{
+    font-size: 50px;
+    opacity: .7;
+}
+
+.before{
+    width: 100px;
+    height: 13px;
+    border: none;
+    position: fixed;
+    bottom: 50px;
+    left: 75px;
+    z-index: 1000;
+    border-radius: 50%;
+    align-items: center;
+}
+
+.home{
+    width: 100px;
+    height: 13px;
+    border: none;
+    position: fixed;
+    bottom: 50px;
+    left: 5px;
+    z-index: 1000;
+    border-radius: 50%;
+    align-items: center;
+}
+
+.num2:hover{
+    font-size: 55px;
+    opacity: 1;
+}
+
+.num1{
+    width: 40px;
+    height: 40px;
+    border: none;
+    position: fixed;
+    bottom: 50px;
+    right: 1px;
+    z-index: 1000;
+    border-radius: 50%;
+    align-items: center;
+    
+}
+.numEND{
+    width: 51px;
+    height: 40px;
+    border: none;
+    position:absolute;
+    bottom: -300px;
+    right: 50%;
+    z-index: 1000;
+    border-radius: 50%;
+    align-items: center;
+    
+}
+.white{
+    color: rgb(255, 255, 255);
+    font-size: 22px;
+    background: transparent;
+    border: none;
+    transition: all .3s ease;
+    opacity: .7;
+    position: relative;
+    bottom: 0px;
+}
+
+.num{
+    font-size: 50px;
+    opacity: 1;
+}
+.numend{
+    color:rgba(0, 0, 0, 0.835);
+    font-size: 50px;
+    opacity: 1;
+}
+
+#conbtn1{
+    width: 40px;
+    height: 40px;
+    border: none;
+    position: fixed;
+    bottom: 100px;
+    left: 15px;
+    z-index: 1000;
+    border-radius: 50%;
+    align-items: center;
+}
+
+
+#conbtn2{
+    width: 40px;
+    height: 40px;
+    border: none;
+    position: fixed;
+    bottom: 35px;
+    left: 15px;
+    z-index: 1000;
+    border-radius: 50%;
+}
+
+#conbtn1:hover {
+    opacity: .9;
+}
+
+#conbtn2:hover {
+    opacity: .9;
+}
+   
+section{
+    filter:grayscale(100%);
+    transition: all .4s ease;
+    opacity: .7;
+    transform: scale(.7);
+}
+
+section.active{
+    filter:grayscale(0%);
+    opacity: 1;
+    transform: scale(1);
+}
+
+/*============ cards 頁面 ============*/
+
+/* 卡片清單 */
+.card-list {
+    /* 讓內部元素可橫著排 */
+    display: flex;
+    /* text-align: center; */
+    /* 控制flex內部元素的排法 */
+    /* flex-end 靠右 space-between 推到最邊緣 space-around 等分成n塊再置中 */
+    justify-content: center;
+    /* 放不下就換行 */
+    /* flex-wrap: wrap; */
+}
+
+/* 一張卡片 */
+
+.header-text{
+    font-family:Microsoft JhengHei;
+}
+.page-text{
+    font-family:sans-serif;
+}
+.card {
+    width: 100%;
+    height:100%;
+    margin: 0;
+    padding: 0;
+    box-shadow: 0px 6px 5px rgba(31, 28, 30, 0.3);
+    transition: all .4s ease;
+    /* border-radius: 20px; */
+    overflow: hidden;
+}
+.card1 {
+    width: 40%;
+    /* height:50%; */
+    margin: 0;
+    padding: 0;
+    /* box-shadow: 0px 6px 5px rgba(31, 28, 30, 0.3); */
+    transition: all .4s ease;
+    /* border-radius: 20px; */
+    overflow: hidden;
+}
+.card9 {
+    width: 25%;
+    height:50%;
+    margin: 0;
+    padding: 0;
+    /* box-shadow: 0px 6px 5px rgba(31, 28, 30, 0.3); */
+    transition: all .4s ease;
+    /* border-radius: 20px; */
+    overflow: hidden;
+}
+.card3 {
+    margin: 0;
+    padding: 0;
+    box-shadow: 0px 6px 5px rgba(31, 28, 30, 0.3);
+    transition: all .4s ease;
+    /* border-radius: 20px; */
+    overflow: hidden;
+}
+.card:hover {
+    box-shadow: 0px 26px 12px rgba(31, 28, 30, 0.3);
+}
+
+/* .card被hover後選到裡面的.card-title */
+.card:hover .card-title {
+    color: tomato;
+}
+
+/* 卡片圖片 */
+.card-img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.card{
+    border:0px;
+    border-radius:0%;
+}
+.card:hover{
+    filter:brightness(1.2);
+    /* transition: all 1.5s cubic-bezier(.23, 1.26, .55, 1.32); */
+}
+
+.card-text {
+    position: absolute;
+    /* top: -200px; */
+    transition: all .5s cubic-bezier(.23, 1.26, .55, 1.32);
+    align-items: center;
+    top: 15px;
+    left: -200px;
+}
+.card3:hover:hover{
+    filter: grayscale(2);
+}
+
+.card3-text {
+    position: absolute;
+    /* top: -200px; */
+    transition: all .5s cubic-bezier(.23, 1.26, .55, 1.32);
+    align-items: center;
+    top: 15px;
+    left: -200px;
+}
+.inner-text{
+    font-size: 60px;
+    color: orange;
+    text-shadow: 2px 2px 4px black;
+    font-family:fantasy;
+    
+}
+
+.card:hover .card-text {
+    left: 15px ;
+    
+}
+
+.card-btns {
+    position: absolute;
+    right: -200px;
+    bottom: 15px;
+    transition: all .5s cubic-bezier(.23, 1.26, .55, 1.32);
+}
+
+.card:hover .card-btns {
+    right: 15px;
+}
+
+.card-btns button {
+    color: rgb(255, 255, 255);
+    font-size: 22px;
+    background: transparent;
+    border: none;
+    transition: all .3s ease;
+    opacity: .7;
+    position: relative;
+    bottom: 0px;
+}
+
+.card-btns button:hover {
+    opacity: 1;
+    bottom: 5px;
+    transition: all .3s ease;
+    color: rgb(221, 56, 56);
+}
+.card-btns .white:hover {
+    opacity: 1;
+    bottom: 5px;
+    transition: all .3s ease;
+    color: rgb(66, 100, 211);
+}
+
+.card3:hover .card3-text {
+    left: 15px ;
+    
+}
+
+.card3-btns {
+    position: absolute;
+    right: -200px;
+    bottom: 15px;
+    transition: all .5s cubic-bezier(.23, 1.26, .55, 1.32);
+}
+
+.card3:hover .card3-btns {
+    right: 15px;
+}
+
+.card3-btns button {
+    color: rgb(255, 255, 255);
+    font-size: 22px;
+    background: transparent;
+    border: none;
+    transition: all .3s ease;
+    opacity: .7;
+    position: relative;
+    bottom: 0px;
+}
+
+.card3-btns button:hover {
+    opacity: 1;
+    bottom: 5px;
+}
+.p2-sizing{
+    width: 100%;
+    height: 509px;
+}
+.p1-sizing{
+    width: 100%;
+    height: 414px;
+}
+.p3-sizing{
+    width: 100%;
+    height: 100%;
+}
+#icon{
+    border-radius: 10px;
+    color: rgba(0, 0, 0, 0.877);
+}
